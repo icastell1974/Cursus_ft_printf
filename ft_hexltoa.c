@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_hexltoa.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: icastell <icastell@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: icastell <icastell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 19:54:53 by icastell          #+#    #+#             */
-/*   Updated: 2021/10/05 19:17:45 by icastell         ###   ########.fr       */
+/*   Updated: 2021/10/25 13:38:08 by icastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*The ft_hextoa() function converts the initial hexadecimal n to a NULL
+/*The ft_hexltoa() function converts the initial hexadecimal n to a NULL
 terminated string. Each digit occupies one position in the string.*/
 
 #include "ft_printf.h"

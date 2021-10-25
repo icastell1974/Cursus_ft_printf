@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: icastell <icastell@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: icastell <icastell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 18:40:34 by icastell          #+#    #+#             */
-/*   Updated: 2021/10/18 16:45:59 by icastell         ###   ########.fr       */
+/*   Updated: 2021/10/25 18:09:21 by icastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,23 +63,6 @@ int main(void)
 	printf("O: El número de caracteres impresos cuando hay un decimal es: %d\n", printf("Número decimal: %d\n", -134));
 	numchar = ft_printf("I: Número decimal: %d\n", 134);
 	numchar = printf("O: Número decimal: %d\n", 134);
-/*	numchar = ft_printf("I: Número decimal (espacio): {% d}\n", 134);
-	numchar = printf("O: Número decimal (espacio): {% d}\n", 134);
-	numchar = ft_printf("I: Número decimal (espacio y +): {% +d}\n", 134);
-	numchar = printf("O: Número decimal (espacio y +): {% +d}\n", 134);
-	numchar = ft_printf("I: Número decimal (+ y espacio): {%+ d}\n", 134);
-	numchar = printf("O: Número decimal (+ y espacio): {%+ d}\n", 134);
-	numchar = ft_printf("I: Número decimal (varios): {%+++ #  d}\n", 134);
-	numchar = printf("O: Número decimal (varios): {%+++ #  d}\n", 134);*/
-	//printf("El número de caracteres impresos cuando hay un decimal es: %d\n", numchar);
-	//numchar = ft_printf("Número decimal (espacio): % d\n", 134);
-	//printf("El número de caracteres impresos cuando hay un decimal (espacio) es: %d\n", numchar);
-	//numchar = printf("Número decimal: %d\n", 134);
-	//printf("El número de caracteres impresos cuando hay un decimal por la original es: %d\n", numchar);
-	//numchar = printf("Número decimal (espacio): % d\n", 134);
-	//printf("El número de caracteres impresos cuando hay un decimal (espacio) por la original es: %d\n", numchar);
-
-	//Impresión de un número entero/decimal (base 10) sin signo:
 
 	numchar = ft_printf("Número decimal sin signo: %u\n", 4294967295);
 	printf("I: El número de caracteres impresos cuando hay un decimal es: %d\n", numchar);

@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: icastell <icastell@student.42madrid.com>   +#+  +:+       +#+         #
+#    By: icastell <icastell@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/21 19:38:12 by icastell          #+#    #+#              #
-#    Updated: 2021/10/14 14:21:30 by icastell         ###   ########.fr        #
+#    Updated: 2021/10/25 16:40:22 by icastell         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
-
-FLAGS = -Wall -Werror -Wextra
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra
 
 SRCS =	ft_printf.c\
 		ft_strchr.c\
@@ -29,26 +29,20 @@ SRCS =	ft_printf.c\
 
 OBJS =	$(SRCS:.c=.o)
 
-#OBJS_BONUS =	$(SRCS_BONUS:.c=.o)
+all:	$(NAME)
 
 $(NAME):	$(OBJS)
 			ar rcs $(NAME) $(OBJS)
 
-$(OBJS):	$(SRCS)
-			gcc $(FLAGS) -c $(SRCS)
+normi:
+		norminette -R CheckForbiddenSourceHeader $(SRCS)
 
 test:
 		gcc -g -I. main.c $(SRCS) -o a.out
 		./a.out
 
-all:	$(NAME)
-
-#bonus:	$(OBJS) $(OBJS_BONUS)
-#		ar rcs $(NAME) $(OBJS_BONUS) $(OBJS_BONUS)
-
 clean:
 		rm -f $(OBJS)
-#		rm -f $(OBJS_BONUS)
 
 fclean:	clean
 		rm -f $(NAME)
